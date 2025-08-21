@@ -45,3 +45,7 @@
 
 #### 3. webx.xml 생성
 프로젝트 컨텍스트 메뉴 > Java EE Tools > Generate Deployment Descriptor 메뉴 선택
+
+#### 4. target runtime 설정
+프로젝트 오른쪽 메뉴 (properties) > Tageted Runtime
+프로젝트의 서버 선택
