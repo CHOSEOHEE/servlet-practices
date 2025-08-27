@@ -5,7 +5,7 @@
     <artifactId>servlet-practices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>emaillist01</artifactId>
+  <artifactId>jstel</artifactId>
   <packaging>war</packaging>
   
   <properties>
@@ -21,6 +21,23 @@
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
 			<version>3.5.2</version>
+		</dependency>
+		
+		<!-- JSTL -->
+		<dependency>
+			<groupId>jakarta.el</groupId>
+			<artifactId>jakarta.el-api</artifactId>
+			<version>5.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.servlet.jsp.jstl</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+			<version>3.0.1</version>
 		</dependency>
 		
 		<!-- servlet api -->
@@ -41,7 +58,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>emaillist01</finalName>
+		<finalName>jstlel</finalName>
 	</build>
 	
 </project>

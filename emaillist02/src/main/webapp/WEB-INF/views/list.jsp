@@ -3,7 +3,7 @@
 <%@ page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	List<EmailVo> list = new EmailDao().findAll();
+	List<EmailVo> list = (List<EmailVo>) request.getAttribute("list");
 %>
 <html>
 <head>
@@ -31,7 +31,7 @@
 			</tr>
 			<tr>
 				<td colspan="2">삭제</td>
-					<a href="/emaillist01/delete.jsp?id=<%=vo.getId() %>"> 삭제</a>
+					<a href="/emaillist02/el?a=delete&id=<%=vo.getId() %>"> 삭제</a>
 			</tr>
 		</table>
 		<br>
@@ -40,7 +40,7 @@
 	%>
 	
 	<p>
-		<a href="/emaillist01/form.jsp">메일등록</a>
+		<a href="/emaillist02/el?a=form">메일등록</a>
 	</p>
 	<br>
 </body>

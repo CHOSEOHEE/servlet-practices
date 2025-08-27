@@ -31,8 +31,8 @@ public class GuestbookDao {
 
 		try (Connection con = getConnection();
 
-				PreparedStatement pstmt = con.prepareStatement(
-						"insert into guestbook(name, message, password, reg_date) values (?,?, ?, ?)");) {
+				PreparedStatement pstmt = con.prepareStatement
+						("insert into guestbook(name, message, password, reg_date) values (?,?, ?, ?)");) {
 			pstmt.setString(1, vo.getName());
 			pstmt.setString(2, vo.getMessage());
 			pstmt.setString(3, vo.getPassword());
