@@ -25,5 +25,6 @@
   <module>guestbook01</module>
   <module>emaillist02</module>
   <module>jstel</module>
+  <module>bean-wiring</module>
   </modules>
 </project>
